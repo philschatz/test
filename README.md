@@ -2,7 +2,7 @@
 
 This element extends an existing defition
 
-Children:
+One of the following:
 
 * [section](#section)
 * [figure](#figure)
@@ -13,32 +13,26 @@ Children:
 * [Content.DivList](#contentdivlist)
 * [Content.ListWithTitle](#contentlistwithtitle)
 * [Content.ParaWithTitle](#contentparawithtitle)
-* [Content.Media.class](#contentmediaclass)
-* [Content.Alternates.class](#contentalternatesclass)
-* [Content.Newline.class](#contentnewlineclass)
+* `<div>Content.Media.class</div>`
+* `<div>Content.Alternates.class</div>`
+* `<div>Content.Newline.class</div>`
 * [Content.FootnoteRefs](#contentfootnoterefs)
 
 # Block.class
 
 This element extends an existing defition
 
-Children:
-
-* [cnx-pi](#cnx-pi)
-
+[cnx-pi](#cnx-pi)
 # Inline.class
 
 This element extends an existing defition
 
-Children:
-
-* [math](#math)
-
+[math](#math)
 # Inline.class
 
 This element extends an existing defition
 
-Children:
+One of the following:
 
 * [u](#u)
 * [Content.SpanList](#contentspanlist)
@@ -46,259 +40,274 @@ Children:
 * [Content.FootnoteNumber](#contentfootnotenumber)
 * [Content.Term](#contentterm)
 * [Content.Foreign](#contentforeign)
-* [Content.Media.class](#contentmediaclass)
-* [Content.Alternates.class](#contentalternatesclass)
-* [Content.Newline.class](#contentnewlineclass)
+* `<span>Content.Media.class</span>`
+* `<span>Content.Alternates.class</span>`
+* `<span>Content.Newline.class</span>`
 
 # Content.Space
 
-Children:
-
-* Number.datatype
-* Text.datatype
-
+`<span data-type="space"
+data-count=Number.datatype>Text.datatype</span>`
 # Content.Term
 
-Children:
+`<span data-type="term">`
 
-* [id.attrib](#idattrib)
-* [class.attrib](#classattrib)
-* [Inline.model](#inlinemodel)
+1.  [id.attrib](#idattrib)
+2.  [class.attrib](#classattrib)
+3.  [Inline.model](#inlinemodel)
+
+`</span>`
 
 # Content.Foreign
 
-Children:
-
-* [Inline.model](#inlinemodel)
-
+`<span data-type="foreign">Inline.model</span>`
 # Content.FootnoteNumber
 
-Children:
+`<sup data-type="footnote-number">`
 
-* [id.attrib.required](#idattribrequired)
-* URI.datatype
-* Number.datatype
+1.  [id.attrib.required](#idattribrequired)
+2.  `<a data-type="footnote-link" href=URI.datatype>Number.datatype</a>`
+
+`</sup>`
 
 # Content.ImageWithThumbnail
 
-Children:
-
-* URI.datatype
-* [img](#img)
-
+`<a data-type="image-with-thumbnail" href=URI.datatype>img</a>`
 # Content.FootnoteRefs
 
-Children:
+`<div data-type="footnote-refs">`
 
-* [id.attrib.required](#idattribrequired)
-* URI.datatype
-* Number.datatype
-* [Inline.model](#inlinemodel)
+1.  `<h3 data-type="footnote-refs-title"/>`
+2.  `<ul data-list-type="bulleted" data-bullet-style="none"/>`
+
+`</div>`
 
 # Content.Title.optional
 
-Children:
+`<div data-type="title">`
 
-* [Common.attrib](#commonattrib)
-* [Flow.model](#flowmodel)
+1.  [Common.attrib](#commonattrib)
+2.  [Flow.model](#flowmodel)
 
+`</div>`
+
+?
 # Content.Note.attrs
 
-Children:
-
-* [Common.attrib](#commonattrib)
-* Text.datatype
-* Text.datatype
-* [Content.Title.optional](#contenttitleoptional)
-
+[Common.attrib](#commonattrib)
+data-label=[Text.datatype](#textdatatype)? data-has-label="true"?
+data-element-type=[Text.datatype](#textdatatype)?[Content.Title.optional](#contenttitleoptional)
 # Content.Note
 
-Children:
+`<div data-type="note">`
 
-* [Content.Note.attrs](#contentnoteattrs)
-* [Flow.model](#flowmodel)
+1.  [Content.Note.attrs](#contentnoteattrs)
+2.  [Flow.model](#flowmodel)
+
+`</div>`
 
 # Content.Equation
 
-Children:
+`<div data-type="equation">`
 
-* [Content.Note.attrs](#contentnoteattrs)
-* [Flow.model](#flowmodel)
+1.  [Content.Note.attrs](#contentnoteattrs)
+2.  [Flow.model](#flowmodel)
+
+`</div>`
 
 # Content.Problem
 
-Children:
+`<div data-type="problem">`
 
-* [Content.Note.attrs](#contentnoteattrs)
-* [Flow.model](#flowmodel)
+1.  [Content.Note.attrs](#contentnoteattrs)
+2.  [Flow.model](#flowmodel)
+
+`</div>`
 
 # Content.Solution
 
-Children:
+`<div data-type="solution" data-print-placement=["here" | "end"]>`
 
-* [Content.Note.attrs](#contentnoteattrs)
-* [Flow.model](#flowmodel)
+1.  [Content.Note.attrs](#contentnoteattrs)
+2.  [Flow.model](#flowmodel)
+
+`</div>`
 
 # Content.Commentary
 
-Children:
+`<div data-type="commentary">`
 
-* [Content.Note.attrs](#contentnoteattrs)
-* [Flow.model](#flowmodel)
+1.  [Content.Note.attrs](#contentnoteattrs)
+2.  [Flow.model](#flowmodel)
+
+`</div>`
 
 # Content.Exercise
 
-Children:
+`<div data-type="exercise" data-print-placement=["here" | "end"]>`
 
-* [Content.Note.attrs](#contentnoteattrs)
-* [Content.Problem](#contentproblem)
-* [Content.Solution](#contentsolution)
-* [Content.Commentary](#contentcommentary)
+1.  [Content.Note.attrs](#contentnoteattrs)
+2.  [Content.Problem](#contentproblem)
+3.  [Content.Solution](#contentsolution)*
+4.  [Content.Commentary](#contentcommentary)*
+
+`</div>`
 
 # Content.Example
 
-Children:
+`<div data-type="example">`
 
-* [Content.Note.attrs](#contentnoteattrs)
-* [Flow.model](#flowmodel)
+1.  [Content.Note.attrs](#contentnoteattrs)
+2.  [Flow.model](#flowmodel)
+
+`</div>`
 
 # Content.Newline.class
 
-Children:
-
-* [Content.Note.attrs](#contentnoteattrs)
-* Number.datatype
-* [br](#br)
-
+data-type="newline"[Content.Note.attrs](#contentnoteattrs)
+data-count=[Number.datatype](#numberdatatype)?[br](#br)*
 # Content.DivList
 
-Children:
-
-* [div-span-list.attrs](#div-span-listattrs)
-* [Content.DivListItem](#contentdivlistitem)
-
+`<div>div-span-list.attrsContent.DivListItem*</div>`
 # Content.DivListItem
 
-Children:
+`<div data-type="item">`
 
-* [Content.Note.attrs](#contentnoteattrs)
-* [Flow.model](#flowmodel)
+1.  [Content.Note.attrs](#contentnoteattrs)
+2.  [Flow.model](#flowmodel)
+
+`</div>`
 
 # Content.SpanList
 
-Children:
-
-* [div-span-list.attrs](#div-span-listattrs)
-* [Content.SpanListItem](#contentspanlistitem)
-
+`<span>div-span-list.attrsContent.SpanListItem*</span>`
 # Content.SpanListItem
 
-Children:
+`<span data-type="item">`
 
-* [Content.Note.attrs](#contentnoteattrs)
-* [Inline.model](#inlinemodel)
+1.  [Content.Note.attrs](#contentnoteattrs)
+2.  [Inline.model](#inlinemodel)
+
+`</span>`
 
 # Content.ListWithTitle
 
-Children:
+`<div data-type="list-with-title">`
 
-* [id.attrib.required](#idattribrequired)
-* [id.attrib](#idattrib)
-* [Inline.model](#inlinemodel)
-* [ul](#ul)
-* [ol](#ol)
-* [Content.DivList](#contentdivlist)
+1.  [id.attrib.required](#idattribrequired)
+2.  `<div data-type="title">`
+    
+    1.  [id.attrib](#idattrib)
+    2.  [Inline.model](#inlinemodel)
+    
+    `</div>`
+
+3.  One of the following:
+    
+    * [ul](#ul)
+    * [ol](#ol)
+    * [Content.DivList](#contentdivlist)
+
+`</div>`
 
 # Content.ParaWithTitle
 
-Children:
+`<p>`
 
-* [p.attlist](#pattlist)
-* [Content.InlineTitle](#contentinlinetitle)
-* [Inline.model](#inlinemodel)
+1.  [p.attlist](#pattlist)
+2.  [Content.InlineTitle](#contentinlinetitle)
+3.  [Inline.model](#inlinemodel)
+
+`</p>`
 
 # Content.Alternates.class
 
-Children:
+data-type="alternates"[id.attrib.required](#idattribrequired)
+data-alt=[Text.datatype](#textdatatype)?
+One of the following:
 
-* [id.attrib.required](#idattribrequired)
-* Text.datatype
 * [img](#img)
 * [Content.ImageWithThumbnail](#contentimagewiththumbnail)
 
+*
 # Content.Media.class
 
-Children:
+data-type="media"[id.attrib.required](#idattribrequired)
+data-alt=[Text.datatype](#textdatatype)
+data-longdesc=[Text.datatype](#textdatatype)?
+One of the following:
 
-* [id.attrib.required](#idattribrequired)
-* Text.datatype
-* Text.datatype
 * [img](#img)
 * [iframe](#iframe)
 
 # Content.Glossary
 
-Children:
-
-* [dl](#dl)
-
+`<div data-type="glossary"><h3 data-type="glossary-title"/>dl*</div>`
 # Content.InlineTitle
 
-Children:
-
-* [Inline.model](#inlinemodel)
-
-true false
+`<span data-type="title">Inline.model</span>`
 # id.attrib.required
 
-Children:
-
-* ID.datatype
-
+id=[ID.datatype](#iddatatype)
 # table.attlist
 
 This element extends an existing defition
 
-Children:
-
-* Text.datatype
-* Text.datatype
-* Number.datatype
-* Number.datatype
-
+data-label=[Text.datatype](#textdatatype)?
+data-frame=[Text.datatype](#textdatatype)?
+data-colsep=[Number.datatype](#numberdatatype)?
+data-rowsep=[Number.datatype](#numberdatatype)?
 # caption
 
 This element extends an existing defition
 
-Children:
+`<caption>`
 
-* [caption.attlist](#captionattlist)
-* [Content.InlineTitle](#contentinlinetitle)
-* [Inline.model](#inlinemodel)
+1.  [caption.attlist](#captionattlist)
+2.  [Content.InlineTitle](#contentinlinetitle)
+3.  [Inline.model](#inlinemodel)
+
+`</caption>`
 
 # enum.attr.td.data-valign
 
+One of the following:
+
+* "top"
+* "middle"
+* "bottom"
+
 # enum.attr.td.data-align
+
+One of the following:
+
+* "left"
+* "center"
+* "right"
+* "justify"
+* "char"
 
 # td.attlist
 
 This element extends an existing defition
 
-Children:
-
-* [enum.attr.td.data-valign](#enumattrtddata-valign)
-* [enum.attr.td.data-align](#enumattrtddata-align)
-
+data-valign=[enum.attr.td.data-valign](#enumattrtddata-valign)?
+data-align=[enum.attr.td.data-align](#enumattrtddata-align)?
 # th.attlist
 
 This element extends an existing defition
 
-Children:
-
-* [enum.attr.td.data-valign](#enumattrtddata-valign)
-* [enum.attr.td.data-align](#enumattrtddata-align)
-
+data-valign=[enum.attr.td.data-valign](#enumattrtddata-valign)?
+data-align=[enum.attr.td.data-align](#enumattrtddata-align)?
 # enum.attr.ol.data-number-style
+
+One of the following:
+
+* "arabic"
+* "lower-alpha"
+* "upper-alpha"
+* "lower-roman"
+* "upper-roman"
 
 # enum.attr.ol.data-mark-suffix
 
@@ -306,179 +315,180 @@ Children:
 
 This element extends an existing defition
 
-Children:
-
-* [enum.attr.ol.data-number-style](#enumattroldata-number-style)
-* [enum.attr.ol.data-mark-suffix](#enumattroldata-mark-suffix)
-* [enum.attr.ol.data-mark-suffix](#enumattroldata-mark-suffix)
-
+data-number-style=[enum.attr.ol.data-number-style](#enumattroldata-number-style)?
+data-mark-suffix=[enum.attr.ol.data-mark-suffix](#enumattroldata-mark-suffix)?
+data-mark-prefix=[enum.attr.ol.data-mark-suffix](#enumattroldata-mark-suffix)?
 # enum.attr.ul.data-bullet-style
+
+One of the following:
+
+* "bullet"
+* "open-circle"
+* "pilcrow"
+* "rpilcrow"
+* "asterisk"
+* "dash"
+* "section"
+* "none"
 
 # ul.attlist
 
 This element extends an existing defition
 
-Children:
-
-* [enum.attr.ul.data-bullet-style](#enumattruldata-bullet-style)
-* [enum.attr.ol.data-mark-suffix](#enumattroldata-mark-suffix)
-
+data-bullet-style=[enum.attr.ul.data-bullet-style](#enumattruldata-bullet-style)?
+data-mark-suffix=[enum.attr.ol.data-mark-suffix](#enumattroldata-mark-suffix)?
+data-labeled-item="true"?
 # li.attlist
 
 This element extends an existing defition
 
-Children:
-
-* Text.datatype
-* Text.datatype
-* Text.datatype
-
+cnx-archive-shortid=[Text.datatype](#textdatatype)
+cnx-archive-uri=[Text.datatype](#textdatatype)?
+data-label=[Text.datatype](#textdatatype)?
 # enum.attr.img.data-media-type
+
+One of the following:
+
+* "image/png"
+* "image/jpeg"
+* "application/postscript"
+* "image/jpg"
 
 # img.attlist
 
 This element extends an existing defition
 
-Children:
-
-* [enum.attr.img.data-media-type](#enumattrimgdata-media-type)
-* URI.datatype
-* Length.datatype
-* Boolean.datatype
-
+data-media-type=[enum.attr.img.data-media-type](#enumattrimgdata-media-type)?
+data-longdesc=[URI.datatype](#uridatatype)?
+data-print-width=[Length.datatype](#lengthdatatype)?
+data-print=[Boolean.datatype](#booleandatatype)?
 # enum.attr.strong.data-effect
 
+"bold"
 # strong.attlist
 
 This element extends an existing defition
 
-Children:
-
-* [enum.attr.strong.data-effect](#enumattrstrongdata-effect)
-
+data-effect=[enum.attr.strong.data-effect](#enumattrstrongdata-effect)?
 # enum.attr.em.data-effect
+
+One of the following:
+
+* "italics"
+* "smallcaps"
 
 # em.attlist
 
 This element extends an existing defition
 
-Children:
-
-* [enum.attr.em.data-effect](#enumattremdata-effect)
-
+data-effect=[enum.attr.em.data-effect](#enumattremdata-effect)?
 # enum.attr.span.data-type
+
+One of the following:
+
+* "cite-title"
 
 # span.attlist
 
 This element extends an existing defition
 
-Children:
-
-* [enum.attr.span.data-type](#enumattrspandata-type)
-* Text.datatype
-
+data-type=[enum.attr.span.data-type](#enumattrspandata-type)?
+data-alt=[Text.datatype](#textdatatype)?
 # enum.attr.Heading.data-type
 
+"title"
 # Heading.attrib
 
 This element extends an existing defition
 
-Children:
-
-* [enum.attr.Heading.data-type](#enumattrheadingdata-type)
-
+data-type=[enum.attr.Heading.data-type](#enumattrheadingdata-type)
 # div.attlist
 
 This element extends an existing defition
 
-Children:
-
-* Text.datatype
-* Text.datatype
-
+data-label=[Text.datatype](#textdatatype)? data-has-label="true"?
+data-element-type=[Text.datatype](#textdatatype)?
 # div-span-list.attrs
 
-Children:
+data-type="list" data-mark-suffix=[Text.datatype](#textdatatype)?
+data-item-sep=[Text.datatype](#textdatatype)?
+One of the following:
 
-* Text.datatype
-* Text.datatype
-* [enum.attr.ul.data-bullet-style](#enumattruldata-bullet-style)
-* [enum.attr.ol.data-number-style](#enumattroldata-number-style)
-* [Content.Note.attrs](#contentnoteattrs)
+* 
+* 
 
+[Content.Note.attrs](#contentnoteattrs)
 # u
 
-Children:
+`<u>`
 
-* [u.attlist](#uattlist)
-* [Inline.model](#inlinemodel)
+1.  [u.attlist](#uattlist)
+2.  [Inline.model](#inlinemodel)
+
+`</u>`
 
 # u.attlist
 
-Children:
-
-* [Common.attrib](#commonattrib)
-
+[Common.attrib](#commonattrib)
 # ol.attlist
 
 This element extends an existing defition
 
+type=? compact="compact"? start=?
 # section
 
-Children:
+`<section>`
 
-* [section.attlist](#sectionattlist)
-* [Heading.class](#headingclass)
-* [Flow.model](#flowmodel)
+1.  [section.attlist](#sectionattlist)
+2.  [Heading.class](#headingclass)?
+3.  [Flow.model](#flowmodel)
+
+`</section>`
 
 # section.attlist
 
-Children:
-
-* [Common.attrib](#commonattrib)
-* Number.datatype
-* Text.datatype
-* Text.datatype
-
+[Common.attrib](#commonattrib)
+data-depth=[Number.datatype](#numberdatatype)
+data-label=[Text.datatype](#textdatatype)?
+data-element-type=[Text.datatype](#textdatatype)?
 # figure
 
-Children:
+`<figure>`
 
-* [figure.attlist](#figureattlist)
-* [Content.Title.optional](#contenttitleoptional)
-* [figcaption](#figcaption)
-* [Flow.model](#flowmodel)
+1.  [figure.attlist](#figureattlist)
+2.  [Content.Title.optional](#contenttitleoptional)
+3.  [figcaption](#figcaption)?
+4.  [Flow.model](#flowmodel)
+
+`</figure>`
 
 # figure.attlist
 
-Children:
-
-* [Common.attrib](#commonattrib)
-* Text.datatype
-
+[Common.attrib](#commonattrib)
+data-label=[Text.datatype](#textdatatype)? data-orient=["vertical" |
+"horizontal"]?
 # figcaption
 
-Children:
+`<figcaption>`
 
-* [figcaption.attlist](#figcaptionattlist)
-* [Content.InlineTitle](#contentinlinetitle)
-* [Flow.model](#flowmodel)
+1.  [figcaption.attlist](#figcaptionattlist)
+2.  [Content.InlineTitle](#contentinlinetitle)?
+3.  [Flow.model](#flowmodel)
+
+`</figcaption>`
 
 # figcaption.attlist
 
-Children:
-
-* [id.attrib](#idattrib)
-
+[id.attrib](#idattrib)
 # cnx-pi
 
-Children:
+`<cnx-pi>`
 
-* [cnx-pi.attlist](#cnx-piattlist)
-* cnx-pi.datatype
+1.  [cnx-pi.attlist](#cnx-piattlist)
+2.  *cnx-pi.datatype*
+
+`</cnx-pi>`
 
 # cnx-pi.attlist
 
-Children:
-
-* Text.datatype
+data-type=["cnx.eoc" | *Text.datatype*]
