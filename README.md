@@ -1,3 +1,31 @@
+# Block.class
+
+This element extends an existing defition
+
+Children:
+
+* [section](#section)
+* [figure](#figure)
+* [Content.Note](#contentnote)
+* [Content.Equation](#contentequation)
+* [Content.Exercise](#contentexercise)
+* [Content.Example](#contentexample)
+* [Content.DivList](#contentdivlist)
+* [Content.ListWithTitle](#contentlistwithtitle)
+* [Content.ParaWithTitle](#contentparawithtitle)
+* [Content.Media.class](#contentmediaclass)
+* [Content.Alternates.class](#contentalternatesclass)
+* [Content.Newline.class](#contentnewlineclass)
+* [Content.FootnoteRefs](#contentfootnoterefs)
+
+# Block.class
+
+This element extends an existing defition
+
+Children:
+
+* [cnx-pi](#cnx-pi)
+
 # Inline.class
 
 This element extends an existing defition
@@ -5,6 +33,220 @@ This element extends an existing defition
 Children:
 
 * [math](#math)
+
+# Inline.class
+
+This element extends an existing defition
+
+Children:
+
+* [u](#u)
+* [Content.SpanList](#contentspanlist)
+* [Content.Space](#contentspace)
+* [Content.FootnoteNumber](#contentfootnotenumber)
+* [Content.Term](#contentterm)
+* [Content.Foreign](#contentforeign)
+* [Content.Media.class](#contentmediaclass)
+* [Content.Alternates.class](#contentalternatesclass)
+* [Content.Newline.class](#contentnewlineclass)
+
+# Content.Space
+
+Children:
+
+* Number.datatype
+* Text.datatype
+
+# Content.Term
+
+Children:
+
+* [id.attrib](#idattrib)
+* [class.attrib](#classattrib)
+* [Inline.model](#inlinemodel)
+
+# Content.Foreign
+
+Children:
+
+* [Inline.model](#inlinemodel)
+
+# Content.FootnoteNumber
+
+Children:
+
+* [id.attrib.required](#idattribrequired)
+* URI.datatype
+* Number.datatype
+
+# Content.ImageWithThumbnail
+
+Children:
+
+* URI.datatype
+* [img](#img)
+
+# Content.FootnoteRefs
+
+Children:
+
+* [id.attrib.required](#idattribrequired)
+* URI.datatype
+* Number.datatype
+* [Inline.model](#inlinemodel)
+
+# Content.Title.optional
+
+Children:
+
+* [Common.attrib](#commonattrib)
+* [Flow.model](#flowmodel)
+
+# Content.Note.attrs
+
+Children:
+
+* [Common.attrib](#commonattrib)
+* Text.datatype
+* Text.datatype
+* [Content.Title.optional](#contenttitleoptional)
+
+# Content.Note
+
+Children:
+
+* [Content.Note.attrs](#contentnoteattrs)
+* [Flow.model](#flowmodel)
+
+# Content.Equation
+
+Children:
+
+* [Content.Note.attrs](#contentnoteattrs)
+* [Flow.model](#flowmodel)
+
+# Content.Problem
+
+Children:
+
+* [Content.Note.attrs](#contentnoteattrs)
+* [Flow.model](#flowmodel)
+
+# Content.Solution
+
+Children:
+
+* [Content.Note.attrs](#contentnoteattrs)
+* [Flow.model](#flowmodel)
+
+# Content.Commentary
+
+Children:
+
+* [Content.Note.attrs](#contentnoteattrs)
+* [Flow.model](#flowmodel)
+
+# Content.Exercise
+
+Children:
+
+* [Content.Note.attrs](#contentnoteattrs)
+* [Content.Problem](#contentproblem)
+* [Content.Solution](#contentsolution)
+* [Content.Commentary](#contentcommentary)
+
+# Content.Example
+
+Children:
+
+* [Content.Note.attrs](#contentnoteattrs)
+* [Flow.model](#flowmodel)
+
+# Content.Newline.class
+
+Children:
+
+* [Content.Note.attrs](#contentnoteattrs)
+* Number.datatype
+* [br](#br)
+
+# Content.DivList
+
+Children:
+
+* [div-span-list.attrs](#div-span-listattrs)
+* [Content.DivListItem](#contentdivlistitem)
+
+# Content.DivListItem
+
+Children:
+
+* [Content.Note.attrs](#contentnoteattrs)
+* [Flow.model](#flowmodel)
+
+# Content.SpanList
+
+Children:
+
+* [div-span-list.attrs](#div-span-listattrs)
+* [Content.SpanListItem](#contentspanlistitem)
+
+# Content.SpanListItem
+
+Children:
+
+* [Content.Note.attrs](#contentnoteattrs)
+* [Inline.model](#inlinemodel)
+
+# Content.ListWithTitle
+
+Children:
+
+* [id.attrib.required](#idattribrequired)
+* [id.attrib](#idattrib)
+* [Inline.model](#inlinemodel)
+* [ul](#ul)
+* [ol](#ol)
+* [Content.DivList](#contentdivlist)
+
+# Content.ParaWithTitle
+
+Children:
+
+* [p.attlist](#pattlist)
+* [Content.InlineTitle](#contentinlinetitle)
+* [Inline.model](#inlinemodel)
+
+# Content.Alternates.class
+
+Children:
+
+* [id.attrib.required](#idattribrequired)
+* Text.datatype
+* [img](#img)
+* [Content.ImageWithThumbnail](#contentimagewiththumbnail)
+
+# Content.Media.class
+
+Children:
+
+* [id.attrib.required](#idattribrequired)
+* Text.datatype
+* Text.datatype
+* [img](#img)
+* [iframe](#iframe)
+
+# Content.Glossary
+
+Children:
+
+* [dl](#dl)
+
+# Content.InlineTitle
+
+Children:
+
+* [Inline.model](#inlinemodel)
 
 true false
 # id.attrib.required
@@ -154,126 +396,6 @@ Children:
 * Text.datatype
 * Text.datatype
 
-# Content.Space
-
-Children:
-
-* Number.datatype
-* Text.datatype
-
-# Content.Term
-
-Children:
-
-* [id.attrib](#idattrib)
-* [class.attrib](#classattrib)
-* [Inline.model](#inlinemodel)
-
-# Content.Foreign
-
-Children:
-
-* [Inline.model](#inlinemodel)
-
-# Content.FootnoteNumber
-
-Children:
-
-* [id.attrib.required](#idattribrequired)
-* URI.datatype
-* Number.datatype
-
-# Content.ImageWithThumbnail
-
-Children:
-
-* URI.datatype
-* [img](#img)
-
-# Content.FootnoteRefs
-
-Children:
-
-* [id.attrib.required](#idattribrequired)
-* URI.datatype
-* Number.datatype
-* [Inline.model](#inlinemodel)
-
-# Content.Title.optional
-
-Children:
-
-* [Common.attrib](#commonattrib)
-* [Flow.model](#flowmodel)
-
-# Content.Note.attrs
-
-Children:
-
-* [Common.attrib](#commonattrib)
-* Text.datatype
-* Text.datatype
-* [Content.Title.optional](#contenttitleoptional)
-
-# Content.Note
-
-Children:
-
-* [Content.Note.attrs](#contentnoteattrs)
-* [Flow.model](#flowmodel)
-
-# Content.Equation
-
-Children:
-
-* [Content.Note.attrs](#contentnoteattrs)
-* [Flow.model](#flowmodel)
-
-# Content.Problem
-
-Children:
-
-* [Content.Note.attrs](#contentnoteattrs)
-* [Flow.model](#flowmodel)
-
-# Content.Solution
-
-Children:
-
-* [Content.Note.attrs](#contentnoteattrs)
-* [Flow.model](#flowmodel)
-
-# Content.Commentary
-
-Children:
-
-* [Content.Note.attrs](#contentnoteattrs)
-* [Flow.model](#flowmodel)
-
-# Content.Exercise
-
-Children:
-
-* [Content.Note.attrs](#contentnoteattrs)
-* [Content.Problem](#contentproblem)
-* [Content.Solution](#contentsolution)
-* [Content.Commentary](#contentcommentary)
-
-# Content.Example
-
-Children:
-
-* [Content.Note.attrs](#contentnoteattrs)
-* [Flow.model](#flowmodel)
-
-# Content.Newline.class
-
-Children:
-
-* [Content.Note.attrs](#contentnoteattrs)
-* Number.datatype
-* [br](#br)
-
 # div-span-list.attrs
 
 Children:
@@ -283,72 +405,6 @@ Children:
 * [enum.attr.ul.data-bullet-style](#enumattruldata-bullet-style)
 * [enum.attr.ol.data-number-style](#enumattroldata-number-style)
 * [Content.Note.attrs](#contentnoteattrs)
-
-# Content.DivList
-
-Children:
-
-* [div-span-list.attrs](#div-span-listattrs)
-* [Content.DivListItem](#contentdivlistitem)
-
-# Content.DivListItem
-
-Children:
-
-* [Content.Note.attrs](#contentnoteattrs)
-* [Flow.model](#flowmodel)
-
-# Content.SpanList
-
-Children:
-
-* [div-span-list.attrs](#div-span-listattrs)
-* [Content.SpanListItem](#contentspanlistitem)
-
-# Content.SpanListItem
-
-Children:
-
-* [Content.Note.attrs](#contentnoteattrs)
-* [Inline.model](#inlinemodel)
-
-# Content.ListWithTitle
-
-Children:
-
-* [id.attrib.required](#idattribrequired)
-* [id.attrib](#idattrib)
-* [Inline.model](#inlinemodel)
-* [ul](#ul)
-* [ol](#ol)
-* [Content.DivList](#contentdivlist)
-
-# Content.ParaWithTitle
-
-Children:
-
-* [p.attlist](#pattlist)
-* [Content.InlineTitle](#contentinlinetitle)
-* [Inline.model](#inlinemodel)
-
-# Content.Alternates.class
-
-Children:
-
-* [id.attrib.required](#idattribrequired)
-* Text.datatype
-* [img](#img)
-* [Content.ImageWithThumbnail](#contentimagewiththumbnail)
-
-# Content.Media.class
-
-Children:
-
-* [id.attrib.required](#idattribrequired)
-* Text.datatype
-* Text.datatype
-* [img](#img)
-* [iframe](#iframe)
 
 # u
 
@@ -366,54 +422,6 @@ Children:
 # ol.attlist
 
 This element extends an existing defition
-
-# Content.Glossary
-
-Children:
-
-* [dl](#dl)
-
-# Content.InlineTitle
-
-Children:
-
-* [Inline.model](#inlinemodel)
-
-# Block.class
-
-This element extends an existing defition
-
-Children:
-
-* [section](#section)
-* [figure](#figure)
-* [Content.Note](#contentnote)
-* [Content.Equation](#contentequation)
-* [Content.Exercise](#contentexercise)
-* [Content.Example](#contentexample)
-* [Content.DivList](#contentdivlist)
-* [Content.ListWithTitle](#contentlistwithtitle)
-* [Content.ParaWithTitle](#contentparawithtitle)
-* [Content.Media.class](#contentmediaclass)
-* [Content.Alternates.class](#contentalternatesclass)
-* [Content.Newline.class](#contentnewlineclass)
-* [Content.FootnoteRefs](#contentfootnoterefs)
-
-# Inline.class
-
-This element extends an existing defition
-
-Children:
-
-* [u](#u)
-* [Content.SpanList](#contentspanlist)
-* [Content.Space](#contentspace)
-* [Content.FootnoteNumber](#contentfootnotenumber)
-* [Content.Term](#contentterm)
-* [Content.Foreign](#contentforeign)
-* [Content.Media.class](#contentmediaclass)
-* [Content.Alternates.class](#contentalternatesclass)
-* [Content.Newline.class](#contentnewlineclass)
 
 # section
 
@@ -474,11 +482,3 @@ Children:
 Children:
 
 * Text.datatype
-
-# Block.class
-
-This element extends an existing defition
-
-Children:
-
-* [cnx-pi](#cnx-pi)
