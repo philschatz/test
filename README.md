@@ -1,4 +1,4 @@
-# Inline.class   {#Inline.class}
+# Inline.class
 
 This element extends an existing defition
 
@@ -7,13 +7,13 @@ Children:
 * [math](#math)
 
 true false
-# id.attrib.required   {#id.attrib.required}
+# id.attrib.required
 
 Children:
 
 * ID.datatype
 
-# table.attlist   {#table.attlist}
+# table.attlist
 
 This element extends an existing defition
 
@@ -24,7 +24,7 @@ Children:
 * Number.datatype
 * Number.datatype
 
-# caption   {#caption}
+# caption
 
 This element extends an existing defition
 
@@ -34,20 +34,11 @@ Children:
 * [Content.InlineTitle](#Content.InlineTitle)
 * [Inline.model](#Inline.model)
 
-# enum.attr.td.data-valign   {#enum.attr.td.data-valign}
+# enum.attr.td.data-valign
 
-# enum.attr.td.data-align   {#enum.attr.td.data-align}
+# enum.attr.td.data-align
 
-# td.attlist   {#td.attlist}
-
-This element extends an existing defition
-
-Children:
-
-* [enum.attr.td.data-valign](#enum.attr.td.data-valign)
-* [enum.attr.td.data-align](#enum.attr.td.data-align)
-
-# th.attlist   {#th.attlist}
+# td.attlist
 
 This element extends an existing defition
 
@@ -56,11 +47,20 @@ Children:
 * [enum.attr.td.data-valign](#enum.attr.td.data-valign)
 * [enum.attr.td.data-align](#enum.attr.td.data-align)
 
-# enum.attr.ol.data-number-style   {#enum.attr.ol.data-number-style}
+# th.attlist
 
-# enum.attr.ol.data-mark-suffix   {#enum.attr.ol.data-mark-suffix}
+This element extends an existing defition
 
-# ol.attlist   {#ol.attlist}
+Children:
+
+* [enum.attr.td.data-valign](#enum.attr.td.data-valign)
+* [enum.attr.td.data-align](#enum.attr.td.data-align)
+
+# enum.attr.ol.data-number-style
+
+# enum.attr.ol.data-mark-suffix
+
+# ol.attlist
 
 This element extends an existing defition
 
@@ -70,9 +70,9 @@ Children:
 * [enum.attr.ol.data-mark-suffix](#enum.attr.ol.data-mark-suffix)
 * [enum.attr.ol.data-mark-suffix](#enum.attr.ol.data-mark-suffix)
 
-# enum.attr.ul.data-bullet-style   {#enum.attr.ul.data-bullet-style}
+# enum.attr.ul.data-bullet-style
 
-# ul.attlist   {#ul.attlist}
+# ul.attlist
 
 This element extends an existing defition
 
@@ -81,7 +81,7 @@ Children:
 * [enum.attr.ul.data-bullet-style](#enum.attr.ul.data-bullet-style)
 * [enum.attr.ol.data-mark-suffix](#enum.attr.ol.data-mark-suffix)
 
-# li.attlist   {#li.attlist}
+# li.attlist
 
 This element extends an existing defition
 
@@ -91,9 +91,9 @@ Children:
 * Text.datatype
 * Text.datatype
 
-# enum.attr.img.data-media-type   {#enum.attr.img.data-media-type}
+# enum.attr.img.data-media-type
 
-# img.attlist   {#img.attlist}
+# img.attlist
 
 This element extends an existing defition
 
@@ -104,9 +104,9 @@ Children:
 * Length.datatype
 * Boolean.datatype
 
-# enum.attr.strong.data-effect   {#enum.attr.strong.data-effect}
+# enum.attr.strong.data-effect
 
-# strong.attlist   {#strong.attlist}
+# strong.attlist
 
 This element extends an existing defition
 
@@ -114,9 +114,9 @@ Children:
 
 * [enum.attr.strong.data-effect](#enum.attr.strong.data-effect)
 
-# enum.attr.em.data-effect   {#enum.attr.em.data-effect}
+# enum.attr.em.data-effect
 
-# em.attlist   {#em.attlist}
+# em.attlist
 
 This element extends an existing defition
 
@@ -124,9 +124,9 @@ Children:
 
 * [enum.attr.em.data-effect](#enum.attr.em.data-effect)
 
-# enum.attr.span.data-type   {#enum.attr.span.data-type}
+# enum.attr.span.data-type
 
-# span.attlist   {#span.attlist}
+# span.attlist
 
 This element extends an existing defition
 
@@ -135,9 +135,9 @@ Children:
 * [enum.attr.span.data-type](#enum.attr.span.data-type)
 * Text.datatype
 
-# enum.attr.Heading.data-type   {#enum.attr.Heading.data-type}
+# enum.attr.Heading.data-type
 
-# Heading.attrib   {#Heading.attrib}
+# Heading.attrib
 
 This element extends an existing defition
 
@@ -145,7 +145,7 @@ Children:
 
 * [enum.attr.Heading.data-type](#enum.attr.Heading.data-type)
 
-# div.attlist   {#div.attlist}
+# div.attlist
 
 This element extends an existing defition
 
@@ -154,14 +154,14 @@ Children:
 * Text.datatype
 * Text.datatype
 
-# Content.Space   {#Content.Space}
+# Content.Space
 
 Children:
 
 * Number.datatype
 * Text.datatype
 
-# Content.Term   {#Content.Term}
+# Content.Term
 
 Children:
 
@@ -169,13 +169,13 @@ Children:
 * [class.attrib](#class.attrib)
 * [Inline.model](#Inline.model)
 
-# Content.Foreign   {#Content.Foreign}
+# Content.Foreign
 
 Children:
 
 * [Inline.model](#Inline.model)
 
-# Content.FootnoteNumber   {#Content.FootnoteNumber}
+# Content.FootnoteNumber
 
 Children:
 
@@ -183,14 +183,14 @@ Children:
 * URI.datatype
 * Number.datatype
 
-# Content.ImageWithThumbnail   {#Content.ImageWithThumbnail}
+# Content.ImageWithThumbnail
 
 Children:
 
 * URI.datatype
 * [img](#img)
 
-# Content.FootnoteRefs   {#Content.FootnoteRefs}
+# Content.FootnoteRefs
 
 Children:
 
@@ -199,14 +199,14 @@ Children:
 * Number.datatype
 * [Inline.model](#Inline.model)
 
-# Content.Title.optional   {#Content.Title.optional}
+# Content.Title.optional
 
 Children:
 
 * [Common.attrib](#Common.attrib)
 * [Flow.model](#Flow.model)
 
-# Content.Note.attrs   {#Content.Note.attrs}
+# Content.Note.attrs
 
 Children:
 
@@ -215,42 +215,42 @@ Children:
 * Text.datatype
 * [Content.Title.optional](#Content.Title.optional)
 
-# Content.Note   {#Content.Note}
+# Content.Note
 
 Children:
 
 * [Content.Note.attrs](#Content.Note.attrs)
 * [Flow.model](#Flow.model)
 
-# Content.Equation   {#Content.Equation}
+# Content.Equation
 
 Children:
 
 * [Content.Note.attrs](#Content.Note.attrs)
 * [Flow.model](#Flow.model)
 
-# Content.Problem   {#Content.Problem}
+# Content.Problem
 
 Children:
 
 * [Content.Note.attrs](#Content.Note.attrs)
 * [Flow.model](#Flow.model)
 
-# Content.Solution   {#Content.Solution}
+# Content.Solution
 
 Children:
 
 * [Content.Note.attrs](#Content.Note.attrs)
 * [Flow.model](#Flow.model)
 
-# Content.Commentary   {#Content.Commentary}
+# Content.Commentary
 
 Children:
 
 * [Content.Note.attrs](#Content.Note.attrs)
 * [Flow.model](#Flow.model)
 
-# Content.Exercise   {#Content.Exercise}
+# Content.Exercise
 
 Children:
 
@@ -259,14 +259,14 @@ Children:
 * [Content.Solution](#Content.Solution)
 * [Content.Commentary](#Content.Commentary)
 
-# Content.Example   {#Content.Example}
+# Content.Example
 
 Children:
 
 * [Content.Note.attrs](#Content.Note.attrs)
 * [Flow.model](#Flow.model)
 
-# Content.Newline.class   {#Content.Newline.class}
+# Content.Newline.class
 
 Children:
 
@@ -274,7 +274,7 @@ Children:
 * Number.datatype
 * [br](#br)
 
-# div-span-list.attrs   {#div-span-list.attrs}
+# div-span-list.attrs
 
 Children:
 
@@ -284,35 +284,35 @@ Children:
 * [enum.attr.ol.data-number-style](#enum.attr.ol.data-number-style)
 * [Content.Note.attrs](#Content.Note.attrs)
 
-# Content.DivList   {#Content.DivList}
+# Content.DivList
 
 Children:
 
 * [div-span-list.attrs](#div-span-list.attrs)
 * [Content.DivListItem](#Content.DivListItem)
 
-# Content.DivListItem   {#Content.DivListItem}
+# Content.DivListItem
 
 Children:
 
 * [Content.Note.attrs](#Content.Note.attrs)
 * [Flow.model](#Flow.model)
 
-# Content.SpanList   {#Content.SpanList}
+# Content.SpanList
 
 Children:
 
 * [div-span-list.attrs](#div-span-list.attrs)
 * [Content.SpanListItem](#Content.SpanListItem)
 
-# Content.SpanListItem   {#Content.SpanListItem}
+# Content.SpanListItem
 
 Children:
 
 * [Content.Note.attrs](#Content.Note.attrs)
 * [Inline.model](#Inline.model)
 
-# Content.ListWithTitle   {#Content.ListWithTitle}
+# Content.ListWithTitle
 
 Children:
 
@@ -323,7 +323,7 @@ Children:
 * [ol](#ol)
 * [Content.DivList](#Content.DivList)
 
-# Content.ParaWithTitle   {#Content.ParaWithTitle}
+# Content.ParaWithTitle
 
 Children:
 
@@ -331,7 +331,7 @@ Children:
 * [Content.InlineTitle](#Content.InlineTitle)
 * [Inline.model](#Inline.model)
 
-# Content.Alternates.class   {#Content.Alternates.class}
+# Content.Alternates.class
 
 Children:
 
@@ -340,7 +340,7 @@ Children:
 * [img](#img)
 * [Content.ImageWithThumbnail](#Content.ImageWithThumbnail)
 
-# Content.Media.class   {#Content.Media.class}
+# Content.Media.class
 
 Children:
 
@@ -350,36 +350,36 @@ Children:
 * [img](#img)
 * [iframe](#iframe)
 
-# u   {#u}
+# u
 
 Children:
 
 * [u.attlist](#u.attlist)
 * [Inline.model](#Inline.model)
 
-# u.attlist   {#u.attlist}
+# u.attlist
 
 Children:
 
 * [Common.attrib](#Common.attrib)
 
-# ol.attlist   {#ol.attlist}
+# ol.attlist
 
 This element extends an existing defition
 
-# Content.Glossary   {#Content.Glossary}
+# Content.Glossary
 
 Children:
 
 * [dl](#dl)
 
-# Content.InlineTitle   {#Content.InlineTitle}
+# Content.InlineTitle
 
 Children:
 
 * [Inline.model](#Inline.model)
 
-# Block.class   {#Block.class}
+# Block.class
 
 This element extends an existing defition
 
@@ -399,7 +399,7 @@ Children:
 * [Content.Newline.class](#Content.Newline.class)
 * [Content.FootnoteRefs](#Content.FootnoteRefs)
 
-# Inline.class   {#Inline.class}
+# Inline.class
 
 This element extends an existing defition
 
@@ -415,7 +415,7 @@ Children:
 * [Content.Alternates.class](#Content.Alternates.class)
 * [Content.Newline.class](#Content.Newline.class)
 
-# section   {#section}
+# section
 
 Children:
 
@@ -423,7 +423,7 @@ Children:
 * [Heading.class](#Heading.class)
 * [Flow.model](#Flow.model)
 
-# section.attlist   {#section.attlist}
+# section.attlist
 
 Children:
 
@@ -432,7 +432,7 @@ Children:
 * Text.datatype
 * Text.datatype
 
-# figure   {#figure}
+# figure
 
 Children:
 
@@ -441,14 +441,14 @@ Children:
 * [figcaption](#figcaption)
 * [Flow.model](#Flow.model)
 
-# figure.attlist   {#figure.attlist}
+# figure.attlist
 
 Children:
 
 * [Common.attrib](#Common.attrib)
 * Text.datatype
 
-# figcaption   {#figcaption}
+# figcaption
 
 Children:
 
@@ -456,29 +456,30 @@ Children:
 * [Content.InlineTitle](#Content.InlineTitle)
 * [Flow.model](#Flow.model)
 
-# figcaption.attlist   {#figcaption.attlist}
+# figcaption.attlist
 
 Children:
 
 * [id.attrib](#id.attrib)
 
-# cnx-pi   {#cnx-pi}
+# cnx-pi
 
 Children:
 
 * [cnx-pi.attlist](#cnx-pi.attlist)
 * cnx-pi.datatype
 
-# cnx-pi.attlist   {#cnx-pi.attlist}
+# cnx-pi.attlist
 
 Children:
 
 * Text.datatype
 
-# Block.class   {#Block.class}
+# Block.class
 
 This element extends an existing defition
 
 Children:
 
 * [cnx-pi](#cnx-pi)
+
