@@ -30,9 +30,9 @@ This element extends an existing defition
 
 Children:
 
-* [caption.attlist](#caption.attlist)
-* [Content.InlineTitle](#Content.InlineTitle)
-* [Inline.model](#Inline.model)
+* [caption.attlist](#captionattlist)
+* [Content.InlineTitle](#ContentInlineTitle)
+* [Inline.model](#Inlinemodel)
 
 # enum.attr.td.data-valign
 
@@ -44,8 +44,8 @@ This element extends an existing defition
 
 Children:
 
-* [enum.attr.td.data-valign](#enum.attr.td.data-valign)
-* [enum.attr.td.data-align](#enum.attr.td.data-align)
+* [enum.attr.td.data-valign](#enumattrtddata-valign)
+* [enum.attr.td.data-align](#enumattrtddata-align)
 
 # th.attlist
 
@@ -53,8 +53,8 @@ This element extends an existing defition
 
 Children:
 
-* [enum.attr.td.data-valign](#enum.attr.td.data-valign)
-* [enum.attr.td.data-align](#enum.attr.td.data-align)
+* [enum.attr.td.data-valign](#enumattrtddata-valign)
+* [enum.attr.td.data-align](#enumattrtddata-align)
 
 # enum.attr.ol.data-number-style
 
@@ -66,9 +66,9 @@ This element extends an existing defition
 
 Children:
 
-* [enum.attr.ol.data-number-style](#enum.attr.ol.data-number-style)
-* [enum.attr.ol.data-mark-suffix](#enum.attr.ol.data-mark-suffix)
-* [enum.attr.ol.data-mark-suffix](#enum.attr.ol.data-mark-suffix)
+* [enum.attr.ol.data-number-style](#enumattroldata-number-style)
+* [enum.attr.ol.data-mark-suffix](#enumattroldata-mark-suffix)
+* [enum.attr.ol.data-mark-suffix](#enumattroldata-mark-suffix)
 
 # enum.attr.ul.data-bullet-style
 
@@ -78,8 +78,8 @@ This element extends an existing defition
 
 Children:
 
-* [enum.attr.ul.data-bullet-style](#enum.attr.ul.data-bullet-style)
-* [enum.attr.ol.data-mark-suffix](#enum.attr.ol.data-mark-suffix)
+* [enum.attr.ul.data-bullet-style](#enumattruldata-bullet-style)
+* [enum.attr.ol.data-mark-suffix](#enumattroldata-mark-suffix)
 
 # li.attlist
 
@@ -99,7 +99,7 @@ This element extends an existing defition
 
 Children:
 
-* [enum.attr.img.data-media-type](#enum.attr.img.data-media-type)
+* [enum.attr.img.data-media-type](#enumattrimgdata-media-type)
 * URI.datatype
 * Length.datatype
 * Boolean.datatype
@@ -112,7 +112,7 @@ This element extends an existing defition
 
 Children:
 
-* [enum.attr.strong.data-effect](#enum.attr.strong.data-effect)
+* [enum.attr.strong.data-effect](#enumattrstrongdata-effect)
 
 # enum.attr.em.data-effect
 
@@ -122,7 +122,7 @@ This element extends an existing defition
 
 Children:
 
-* [enum.attr.em.data-effect](#enum.attr.em.data-effect)
+* [enum.attr.em.data-effect](#enumattremdata-effect)
 
 # enum.attr.span.data-type
 
@@ -132,7 +132,7 @@ This element extends an existing defition
 
 Children:
 
-* [enum.attr.span.data-type](#enum.attr.span.data-type)
+* [enum.attr.span.data-type](#enumattrspandata-type)
 * Text.datatype
 
 # enum.attr.Heading.data-type
@@ -143,7 +143,7 @@ This element extends an existing defition
 
 Children:
 
-* [enum.attr.Heading.data-type](#enum.attr.Heading.data-type)
+* [enum.attr.Heading.data-type](#enumattrHeadingdata-type)
 
 # div.attlist
 
@@ -165,21 +165,21 @@ Children:
 
 Children:
 
-* [id.attrib](#id.attrib)
-* [class.attrib](#class.attrib)
-* [Inline.model](#Inline.model)
+* [id.attrib](#idattrib)
+* [class.attrib](#classattrib)
+* [Inline.model](#Inlinemodel)
 
 # Content.Foreign
 
 Children:
 
-* [Inline.model](#Inline.model)
+* [Inline.model](#Inlinemodel)
 
 # Content.FootnoteNumber
 
 Children:
 
-* [id.attrib.required](#id.attrib.required)
+* [id.attrib.required](#idattribrequired)
 * URI.datatype
 * Number.datatype
 
@@ -194,83 +194,83 @@ Children:
 
 Children:
 
-* [id.attrib.required](#id.attrib.required)
+* [id.attrib.required](#idattribrequired)
 * URI.datatype
 * Number.datatype
-* [Inline.model](#Inline.model)
+* [Inline.model](#Inlinemodel)
 
 # Content.Title.optional
 
 Children:
 
-* [Common.attrib](#Common.attrib)
-* [Flow.model](#Flow.model)
+* [Common.attrib](#Commonattrib)
+* [Flow.model](#Flowmodel)
 
 # Content.Note.attrs
 
 Children:
 
-* [Common.attrib](#Common.attrib)
+* [Common.attrib](#Commonattrib)
 * Text.datatype
 * Text.datatype
-* [Content.Title.optional](#Content.Title.optional)
+* [Content.Title.optional](#ContentTitleoptional)
 
 # Content.Note
 
 Children:
 
-* [Content.Note.attrs](#Content.Note.attrs)
-* [Flow.model](#Flow.model)
+* [Content.Note.attrs](#ContentNoteattrs)
+* [Flow.model](#Flowmodel)
 
 # Content.Equation
 
 Children:
 
-* [Content.Note.attrs](#Content.Note.attrs)
-* [Flow.model](#Flow.model)
+* [Content.Note.attrs](#ContentNoteattrs)
+* [Flow.model](#Flowmodel)
 
 # Content.Problem
 
 Children:
 
-* [Content.Note.attrs](#Content.Note.attrs)
-* [Flow.model](#Flow.model)
+* [Content.Note.attrs](#ContentNoteattrs)
+* [Flow.model](#Flowmodel)
 
 # Content.Solution
 
 Children:
 
-* [Content.Note.attrs](#Content.Note.attrs)
-* [Flow.model](#Flow.model)
+* [Content.Note.attrs](#ContentNoteattrs)
+* [Flow.model](#Flowmodel)
 
 # Content.Commentary
 
 Children:
 
-* [Content.Note.attrs](#Content.Note.attrs)
-* [Flow.model](#Flow.model)
+* [Content.Note.attrs](#ContentNoteattrs)
+* [Flow.model](#Flowmodel)
 
 # Content.Exercise
 
 Children:
 
-* [Content.Note.attrs](#Content.Note.attrs)
-* [Content.Problem](#Content.Problem)
-* [Content.Solution](#Content.Solution)
-* [Content.Commentary](#Content.Commentary)
+* [Content.Note.attrs](#ContentNoteattrs)
+* [Content.Problem](#ContentProblem)
+* [Content.Solution](#ContentSolution)
+* [Content.Commentary](#ContentCommentary)
 
 # Content.Example
 
 Children:
 
-* [Content.Note.attrs](#Content.Note.attrs)
-* [Flow.model](#Flow.model)
+* [Content.Note.attrs](#ContentNoteattrs)
+* [Flow.model](#Flowmodel)
 
 # Content.Newline.class
 
 Children:
 
-* [Content.Note.attrs](#Content.Note.attrs)
+* [Content.Note.attrs](#ContentNoteattrs)
 * Number.datatype
 * [br](#br)
 
@@ -280,71 +280,71 @@ Children:
 
 * Text.datatype
 * Text.datatype
-* [enum.attr.ul.data-bullet-style](#enum.attr.ul.data-bullet-style)
-* [enum.attr.ol.data-number-style](#enum.attr.ol.data-number-style)
-* [Content.Note.attrs](#Content.Note.attrs)
+* [enum.attr.ul.data-bullet-style](#enumattruldata-bullet-style)
+* [enum.attr.ol.data-number-style](#enumattroldata-number-style)
+* [Content.Note.attrs](#ContentNoteattrs)
 
 # Content.DivList
 
 Children:
 
-* [div-span-list.attrs](#div-span-list.attrs)
-* [Content.DivListItem](#Content.DivListItem)
+* [div-span-list.attrs](#div-span-listattrs)
+* [Content.DivListItem](#ContentDivListItem)
 
 # Content.DivListItem
 
 Children:
 
-* [Content.Note.attrs](#Content.Note.attrs)
-* [Flow.model](#Flow.model)
+* [Content.Note.attrs](#ContentNoteattrs)
+* [Flow.model](#Flowmodel)
 
 # Content.SpanList
 
 Children:
 
-* [div-span-list.attrs](#div-span-list.attrs)
-* [Content.SpanListItem](#Content.SpanListItem)
+* [div-span-list.attrs](#div-span-listattrs)
+* [Content.SpanListItem](#ContentSpanListItem)
 
 # Content.SpanListItem
 
 Children:
 
-* [Content.Note.attrs](#Content.Note.attrs)
-* [Inline.model](#Inline.model)
+* [Content.Note.attrs](#ContentNoteattrs)
+* [Inline.model](#Inlinemodel)
 
 # Content.ListWithTitle
 
 Children:
 
-* [id.attrib.required](#id.attrib.required)
-* [id.attrib](#id.attrib)
-* [Inline.model](#Inline.model)
+* [id.attrib.required](#idattribrequired)
+* [id.attrib](#idattrib)
+* [Inline.model](#Inlinemodel)
 * [ul](#ul)
 * [ol](#ol)
-* [Content.DivList](#Content.DivList)
+* [Content.DivList](#ContentDivList)
 
 # Content.ParaWithTitle
 
 Children:
 
-* [p.attlist](#p.attlist)
-* [Content.InlineTitle](#Content.InlineTitle)
-* [Inline.model](#Inline.model)
+* [p.attlist](#pattlist)
+* [Content.InlineTitle](#ContentInlineTitle)
+* [Inline.model](#Inlinemodel)
 
 # Content.Alternates.class
 
 Children:
 
-* [id.attrib.required](#id.attrib.required)
+* [id.attrib.required](#idattribrequired)
 * Text.datatype
 * [img](#img)
-* [Content.ImageWithThumbnail](#Content.ImageWithThumbnail)
+* [Content.ImageWithThumbnail](#ContentImageWithThumbnail)
 
 # Content.Media.class
 
 Children:
 
-* [id.attrib.required](#id.attrib.required)
+* [id.attrib.required](#idattribrequired)
 * Text.datatype
 * Text.datatype
 * [img](#img)
@@ -354,14 +354,14 @@ Children:
 
 Children:
 
-* [u.attlist](#u.attlist)
-* [Inline.model](#Inline.model)
+* [u.attlist](#uattlist)
+* [Inline.model](#Inlinemodel)
 
 # u.attlist
 
 Children:
 
-* [Common.attrib](#Common.attrib)
+* [Common.attrib](#Commonattrib)
 
 # ol.attlist
 
@@ -377,7 +377,7 @@ Children:
 
 Children:
 
-* [Inline.model](#Inline.model)
+* [Inline.model](#Inlinemodel)
 
 # Block.class
 
@@ -387,17 +387,17 @@ Children:
 
 * [section](#section)
 * [figure](#figure)
-* [Content.Note](#Content.Note)
-* [Content.Equation](#Content.Equation)
-* [Content.Exercise](#Content.Exercise)
-* [Content.Example](#Content.Example)
-* [Content.DivList](#Content.DivList)
-* [Content.ListWithTitle](#Content.ListWithTitle)
-* [Content.ParaWithTitle](#Content.ParaWithTitle)
-* [Content.Media.class](#Content.Media.class)
-* [Content.Alternates.class](#Content.Alternates.class)
-* [Content.Newline.class](#Content.Newline.class)
-* [Content.FootnoteRefs](#Content.FootnoteRefs)
+* [Content.Note](#ContentNote)
+* [Content.Equation](#ContentEquation)
+* [Content.Exercise](#ContentExercise)
+* [Content.Example](#ContentExample)
+* [Content.DivList](#ContentDivList)
+* [Content.ListWithTitle](#ContentListWithTitle)
+* [Content.ParaWithTitle](#ContentParaWithTitle)
+* [Content.Media.class](#ContentMediaclass)
+* [Content.Alternates.class](#ContentAlternatesclass)
+* [Content.Newline.class](#ContentNewlineclass)
+* [Content.FootnoteRefs](#ContentFootnoteRefs)
 
 # Inline.class
 
@@ -406,28 +406,28 @@ This element extends an existing defition
 Children:
 
 * [u](#u)
-* [Content.SpanList](#Content.SpanList)
-* [Content.Space](#Content.Space)
-* [Content.FootnoteNumber](#Content.FootnoteNumber)
-* [Content.Term](#Content.Term)
-* [Content.Foreign](#Content.Foreign)
-* [Content.Media.class](#Content.Media.class)
-* [Content.Alternates.class](#Content.Alternates.class)
-* [Content.Newline.class](#Content.Newline.class)
+* [Content.SpanList](#ContentSpanList)
+* [Content.Space](#ContentSpace)
+* [Content.FootnoteNumber](#ContentFootnoteNumber)
+* [Content.Term](#ContentTerm)
+* [Content.Foreign](#ContentForeign)
+* [Content.Media.class](#ContentMediaclass)
+* [Content.Alternates.class](#ContentAlternatesclass)
+* [Content.Newline.class](#ContentNewlineclass)
 
 # section
 
 Children:
 
-* [section.attlist](#section.attlist)
-* [Heading.class](#Heading.class)
-* [Flow.model](#Flow.model)
+* [section.attlist](#sectionattlist)
+* [Heading.class](#Headingclass)
+* [Flow.model](#Flowmodel)
 
 # section.attlist
 
 Children:
 
-* [Common.attrib](#Common.attrib)
+* [Common.attrib](#Commonattrib)
 * Number.datatype
 * Text.datatype
 * Text.datatype
@@ -436,37 +436,37 @@ Children:
 
 Children:
 
-* [figure.attlist](#figure.attlist)
-* [Content.Title.optional](#Content.Title.optional)
+* [figure.attlist](#figureattlist)
+* [Content.Title.optional](#ContentTitleoptional)
 * [figcaption](#figcaption)
-* [Flow.model](#Flow.model)
+* [Flow.model](#Flowmodel)
 
 # figure.attlist
 
 Children:
 
-* [Common.attrib](#Common.attrib)
+* [Common.attrib](#Commonattrib)
 * Text.datatype
 
 # figcaption
 
 Children:
 
-* [figcaption.attlist](#figcaption.attlist)
-* [Content.InlineTitle](#Content.InlineTitle)
-* [Flow.model](#Flow.model)
+* [figcaption.attlist](#figcaptionattlist)
+* [Content.InlineTitle](#ContentInlineTitle)
+* [Flow.model](#Flowmodel)
 
 # figcaption.attlist
 
 Children:
 
-* [id.attrib](#id.attrib)
+* [id.attrib](#idattrib)
 
 # cnx-pi
 
 Children:
 
-* [cnx-pi.attlist](#cnx-pi.attlist)
+* [cnx-pi.attlist](#cnx-piattlist)
 * cnx-pi.datatype
 
 # cnx-pi.attlist
@@ -482,4 +482,3 @@ This element extends an existing defition
 Children:
 
 * [cnx-pi](#cnx-pi)
-
