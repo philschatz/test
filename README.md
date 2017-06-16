@@ -31,8 +31,8 @@ This element extends an existing defition
 Children:
 
 * [caption.attlist](#captionattlist)
-* [Content.InlineTitle](#ContentInlineTitle)
-* [Inline.model](#Inlinemodel)
+* [Content.InlineTitle](#contentinlinetitle)
+* [Inline.model](#inlinemodel)
 
 # enum.attr.td.data-valign
 
@@ -143,7 +143,7 @@ This element extends an existing defition
 
 Children:
 
-* [enum.attr.Heading.data-type](#enumattrHeadingdata-type)
+* [enum.attr.Heading.data-type](#enumattrheadingdata-type)
 
 # div.attlist
 
@@ -167,13 +167,13 @@ Children:
 
 * [id.attrib](#idattrib)
 * [class.attrib](#classattrib)
-* [Inline.model](#Inlinemodel)
+* [Inline.model](#inlinemodel)
 
 # Content.Foreign
 
 Children:
 
-* [Inline.model](#Inlinemodel)
+* [Inline.model](#inlinemodel)
 
 # Content.FootnoteNumber
 
@@ -197,80 +197,80 @@ Children:
 * [id.attrib.required](#idattribrequired)
 * URI.datatype
 * Number.datatype
-* [Inline.model](#Inlinemodel)
+* [Inline.model](#inlinemodel)
 
 # Content.Title.optional
 
 Children:
 
-* [Common.attrib](#Commonattrib)
-* [Flow.model](#Flowmodel)
+* [Common.attrib](#commonattrib)
+* [Flow.model](#flowmodel)
 
 # Content.Note.attrs
 
 Children:
 
-* [Common.attrib](#Commonattrib)
+* [Common.attrib](#commonattrib)
 * Text.datatype
 * Text.datatype
-* [Content.Title.optional](#ContentTitleoptional)
+* [Content.Title.optional](#contenttitleoptional)
 
 # Content.Note
 
 Children:
 
-* [Content.Note.attrs](#ContentNoteattrs)
-* [Flow.model](#Flowmodel)
+* [Content.Note.attrs](#contentnoteattrs)
+* [Flow.model](#flowmodel)
 
 # Content.Equation
 
 Children:
 
-* [Content.Note.attrs](#ContentNoteattrs)
-* [Flow.model](#Flowmodel)
+* [Content.Note.attrs](#contentnoteattrs)
+* [Flow.model](#flowmodel)
 
 # Content.Problem
 
 Children:
 
-* [Content.Note.attrs](#ContentNoteattrs)
-* [Flow.model](#Flowmodel)
+* [Content.Note.attrs](#contentnoteattrs)
+* [Flow.model](#flowmodel)
 
 # Content.Solution
 
 Children:
 
-* [Content.Note.attrs](#ContentNoteattrs)
-* [Flow.model](#Flowmodel)
+* [Content.Note.attrs](#contentnoteattrs)
+* [Flow.model](#flowmodel)
 
 # Content.Commentary
 
 Children:
 
-* [Content.Note.attrs](#ContentNoteattrs)
-* [Flow.model](#Flowmodel)
+* [Content.Note.attrs](#contentnoteattrs)
+* [Flow.model](#flowmodel)
 
 # Content.Exercise
 
 Children:
 
-* [Content.Note.attrs](#ContentNoteattrs)
-* [Content.Problem](#ContentProblem)
-* [Content.Solution](#ContentSolution)
-* [Content.Commentary](#ContentCommentary)
+* [Content.Note.attrs](#contentnoteattrs)
+* [Content.Problem](#contentproblem)
+* [Content.Solution](#contentsolution)
+* [Content.Commentary](#contentcommentary)
 
 # Content.Example
 
 Children:
 
-* [Content.Note.attrs](#ContentNoteattrs)
-* [Flow.model](#Flowmodel)
+* [Content.Note.attrs](#contentnoteattrs)
+* [Flow.model](#flowmodel)
 
 # Content.Newline.class
 
 Children:
 
-* [Content.Note.attrs](#ContentNoteattrs)
+* [Content.Note.attrs](#contentnoteattrs)
 * Number.datatype
 * [br](#br)
 
@@ -282,35 +282,35 @@ Children:
 * Text.datatype
 * [enum.attr.ul.data-bullet-style](#enumattruldata-bullet-style)
 * [enum.attr.ol.data-number-style](#enumattroldata-number-style)
-* [Content.Note.attrs](#ContentNoteattrs)
+* [Content.Note.attrs](#contentnoteattrs)
 
 # Content.DivList
 
 Children:
 
 * [div-span-list.attrs](#div-span-listattrs)
-* [Content.DivListItem](#ContentDivListItem)
+* [Content.DivListItem](#contentdivlistitem)
 
 # Content.DivListItem
 
 Children:
 
-* [Content.Note.attrs](#ContentNoteattrs)
-* [Flow.model](#Flowmodel)
+* [Content.Note.attrs](#contentnoteattrs)
+* [Flow.model](#flowmodel)
 
 # Content.SpanList
 
 Children:
 
 * [div-span-list.attrs](#div-span-listattrs)
-* [Content.SpanListItem](#ContentSpanListItem)
+* [Content.SpanListItem](#contentspanlistitem)
 
 # Content.SpanListItem
 
 Children:
 
-* [Content.Note.attrs](#ContentNoteattrs)
-* [Inline.model](#Inlinemodel)
+* [Content.Note.attrs](#contentnoteattrs)
+* [Inline.model](#inlinemodel)
 
 # Content.ListWithTitle
 
@@ -318,18 +318,18 @@ Children:
 
 * [id.attrib.required](#idattribrequired)
 * [id.attrib](#idattrib)
-* [Inline.model](#Inlinemodel)
+* [Inline.model](#inlinemodel)
 * [ul](#ul)
 * [ol](#ol)
-* [Content.DivList](#ContentDivList)
+* [Content.DivList](#contentdivlist)
 
 # Content.ParaWithTitle
 
 Children:
 
 * [p.attlist](#pattlist)
-* [Content.InlineTitle](#ContentInlineTitle)
-* [Inline.model](#Inlinemodel)
+* [Content.InlineTitle](#contentinlinetitle)
+* [Inline.model](#inlinemodel)
 
 # Content.Alternates.class
 
@@ -338,7 +338,7 @@ Children:
 * [id.attrib.required](#idattribrequired)
 * Text.datatype
 * [img](#img)
-* [Content.ImageWithThumbnail](#ContentImageWithThumbnail)
+* [Content.ImageWithThumbnail](#contentimagewiththumbnail)
 
 # Content.Media.class
 
@@ -355,13 +355,13 @@ Children:
 Children:
 
 * [u.attlist](#uattlist)
-* [Inline.model](#Inlinemodel)
+* [Inline.model](#inlinemodel)
 
 # u.attlist
 
 Children:
 
-* [Common.attrib](#Commonattrib)
+* [Common.attrib](#commonattrib)
 
 # ol.attlist
 
@@ -377,7 +377,7 @@ Children:
 
 Children:
 
-* [Inline.model](#Inlinemodel)
+* [Inline.model](#inlinemodel)
 
 # Block.class
 
@@ -387,17 +387,17 @@ Children:
 
 * [section](#section)
 * [figure](#figure)
-* [Content.Note](#ContentNote)
-* [Content.Equation](#ContentEquation)
-* [Content.Exercise](#ContentExercise)
-* [Content.Example](#ContentExample)
-* [Content.DivList](#ContentDivList)
-* [Content.ListWithTitle](#ContentListWithTitle)
-* [Content.ParaWithTitle](#ContentParaWithTitle)
-* [Content.Media.class](#ContentMediaclass)
-* [Content.Alternates.class](#ContentAlternatesclass)
-* [Content.Newline.class](#ContentNewlineclass)
-* [Content.FootnoteRefs](#ContentFootnoteRefs)
+* [Content.Note](#contentnote)
+* [Content.Equation](#contentequation)
+* [Content.Exercise](#contentexercise)
+* [Content.Example](#contentexample)
+* [Content.DivList](#contentdivlist)
+* [Content.ListWithTitle](#contentlistwithtitle)
+* [Content.ParaWithTitle](#contentparawithtitle)
+* [Content.Media.class](#contentmediaclass)
+* [Content.Alternates.class](#contentalternatesclass)
+* [Content.Newline.class](#contentnewlineclass)
+* [Content.FootnoteRefs](#contentfootnoterefs)
 
 # Inline.class
 
@@ -406,28 +406,28 @@ This element extends an existing defition
 Children:
 
 * [u](#u)
-* [Content.SpanList](#ContentSpanList)
-* [Content.Space](#ContentSpace)
-* [Content.FootnoteNumber](#ContentFootnoteNumber)
-* [Content.Term](#ContentTerm)
-* [Content.Foreign](#ContentForeign)
-* [Content.Media.class](#ContentMediaclass)
-* [Content.Alternates.class](#ContentAlternatesclass)
-* [Content.Newline.class](#ContentNewlineclass)
+* [Content.SpanList](#contentspanlist)
+* [Content.Space](#contentspace)
+* [Content.FootnoteNumber](#contentfootnotenumber)
+* [Content.Term](#contentterm)
+* [Content.Foreign](#contentforeign)
+* [Content.Media.class](#contentmediaclass)
+* [Content.Alternates.class](#contentalternatesclass)
+* [Content.Newline.class](#contentnewlineclass)
 
 # section
 
 Children:
 
 * [section.attlist](#sectionattlist)
-* [Heading.class](#Headingclass)
-* [Flow.model](#Flowmodel)
+* [Heading.class](#headingclass)
+* [Flow.model](#flowmodel)
 
 # section.attlist
 
 Children:
 
-* [Common.attrib](#Commonattrib)
+* [Common.attrib](#commonattrib)
 * Number.datatype
 * Text.datatype
 * Text.datatype
@@ -437,15 +437,15 @@ Children:
 Children:
 
 * [figure.attlist](#figureattlist)
-* [Content.Title.optional](#ContentTitleoptional)
+* [Content.Title.optional](#contenttitleoptional)
 * [figcaption](#figcaption)
-* [Flow.model](#Flowmodel)
+* [Flow.model](#flowmodel)
 
 # figure.attlist
 
 Children:
 
-* [Common.attrib](#Commonattrib)
+* [Common.attrib](#commonattrib)
 * Text.datatype
 
 # figcaption
@@ -453,8 +453,8 @@ Children:
 Children:
 
 * [figcaption.attlist](#figcaptionattlist)
-* [Content.InlineTitle](#ContentInlineTitle)
-* [Flow.model](#Flowmodel)
+* [Content.InlineTitle](#contentinlinetitle)
+* [Flow.model](#flowmodel)
 
 # figcaption.attlist
 
