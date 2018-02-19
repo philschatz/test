@@ -7,7 +7,7 @@ repository:
   name: test
 
   # A short description of the repository that will show up on GitHub
-  description: A test repository for testing
+  description: A test repository
 
   # A URL with more information about the repository
   homepage: 
