@@ -7,7 +7,7 @@ repository:
   name: test
 
   # A short description of the repository that will show up on GitHub
-  description: A test repository
+  description: A test repository :white_check_mark:
 
   # A URL with more information about the repository
   homepage: 
