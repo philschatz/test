@@ -47,17 +47,17 @@ repository:
   allow_rebase_merge: false
 
 # Labels: define labels for Issues and Pull Requests
-# labels:
-#   - name: bug
-#     color: CC0000
-#   - name: feature
-#     color: 336699
-#   - name: first-timers-only
-#     # include the old name to rename an existing label
-#     oldname: Help Wanted
+labels:
+  - name: bug
+    color: CC0000
+  - name: feature
+    color: 336699
+  - name: first-timers-only
+    # include the old name to rename an existing label
+    oldname: Help Wanted
 
 # Collaborators: give specific users access to this repository.
-# collaborators:
+collaborators:
   - username: pumazi
     # Note: Only valid on organization-owned repositories.
     # The permission to grant the collaborator. Can be one of:
