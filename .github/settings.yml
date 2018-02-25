@@ -7,7 +7,7 @@ repository:
   name: test
 
   # A short description of the repository that will show up on GitHub
-  description: ":tada: A test repository :white_check_mark:"
+  description: ":tada: A test repository for staxly-dev :white_check_mark:"
 
   # A URL with more information about the repository
   homepage: 
