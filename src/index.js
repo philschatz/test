@@ -1,2 +1,2 @@
 // Check if CHANGELOG bot runs
-// another line
+// another line2
