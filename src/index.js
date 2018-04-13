@@ -1,4 +1,3 @@
-// Check if CHANGELOG bot runs
-
-
-// TODO fix me
+function add(a, b) {
+  return a 
+}
