@@ -1,5 +1,3 @@
-Test a push
-
 # Block.class
 
 This element extends an existing defition
